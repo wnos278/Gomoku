@@ -87,16 +87,16 @@ void CGomokuDlg::OnPaint()
 		// Ve ban co
 		CPaintDC dc(this);
 
-		for (int y = 1; y < MAX_Y_COUNT; y++) {
-			for (int x = 1; x < MAX_X_COUNT; x++) {
+		for (size_t y = 1; y < MAX_Y_COUNT; y++) {
+			for (size_t x = 1; x < MAX_X_COUNT; x++) {
 				dc.Rectangle((x + MOVX)*LINE_INTERVAL, (y + MOVY)*LINE_INTERVAL,
 					(x + MOVX)*LINE_INTERVAL + LINE_INTERVAL + 1, (y + MOVY)*LINE_INTERVAL + LINE_INTERVAL + 1);
 			}
 		}
 		CBrush *p_old_brush;
 
-		for (int y = 1; y <= MAX_Y_COUNT; y++) {
-			for (int x = 1; x <= MAX_X_COUNT; x++) {
+		for (size_t y = 1; y <= MAX_Y_COUNT; y++) {
+			for (size_t x = 1; x <= MAX_X_COUNT; x++) {
 				if (m_dol_pos[y - 1][x - 1]) {
 					if (m_dol_pos[y - 1][x - 1] == 1) {
 						p_old_brush = dc.SelectObject(&m_black_brush);

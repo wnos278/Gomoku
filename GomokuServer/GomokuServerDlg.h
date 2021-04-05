@@ -11,6 +11,9 @@
 #define MAX_COLUMN 19
 #define MAX_ROW 19 
 
+#pragma warning(disable:4996)
+#define _WINSOCK_DEPRECATED_NO_WARNINGS
+
 using namespace std;
 
 // Struct luu thong tin client ket noi

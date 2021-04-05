@@ -9,11 +9,15 @@
 #define MAX_X_COUNT 19
 #define MAX_Y_COUNT 19
 
+#pragma warning(disable:4996)
+#define _WINSOCK_DEPRECATED_NO_WARNINGS
+
 using namespace std;
 
 #define LINE_INTERVAL 30
 #define MOVX 3
 #define MOVY 7.5
+
 // CGomokuDlg dialog
 class CGomokuDlg : public CDialogEx
 {

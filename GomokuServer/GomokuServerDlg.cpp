@@ -110,7 +110,7 @@ UINT CGomokuServerDlg::AcceptFunc(LPVOID pParam)
 		{
 			// luu thong tin can thiet cua client
 			m_clients[i].h_socket = client;
-			strcpy(m_clients[i].ip_address, inet_ntoa(addr.sin_addr));
+			strcpy_s(m_clients[i].ip_address, inet_ntoa(addr.sin_addr));
 			m_clients[i].isLogin = false;
 
 			// Thong bao len hop thoai server

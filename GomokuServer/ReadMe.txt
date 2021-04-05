@@ -1,85 +1,12 @@
-================================================================================
-    MICROSOFT FOUNDATION CLASS LIBRARY : GomokuServer Project Overview
-===============================================================================
+# Gomoku Server Project
+### Dev by SONTDC Bkav Corp
 
-The application wizard has created this GomokuServer application for
-you.  This application not only demonstrates the basics of using the Microsoft
-Foundation Classes but is also a starting point for writing your application.
+## Thông tin c? b?n:
+* *Ngôn ng? C++ MFC Win32*
+* S? d?ng giao th?c b?t ??ng b? *WSAAsyncSelect*, l?ng nghe các thông ?i?p ???c c?u hình s?n g?i t? Client cho Server.
+* Game Server ph?n h?i l?i các thông tin: ??ng nh?p, ??ng xu?t, T?o game m?i, l?y thông tin tr?n ??u, tính toán k?t qu?
 
-This file contains a summary of what you will find in each of the files that
-make up your GomokuServer application.
-
-GomokuServer.vcxproj
-    This is the main project file for VC++ projects generated using an application wizard.
-    It contains information about the version of Visual C++ that generated the file, and
-    information about the platforms, configurations, and project features selected with the
-    application wizard.
-
-GomokuServer.vcxproj.filters
-    This is the filters file for VC++ projects generated using an Application Wizard. 
-    It contains information about the association between the files in your project 
-    and the filters. This association is used in the IDE to show grouping of files with
-    similar extensions under a specific node (for e.g. ".cpp" files are associated with the
-    "Source Files" filter).
-
-GomokuServer.h
-    This is the main header file for the application.  It includes other
-    project specific headers (including Resource.h) and declares the
-    CGomokuServerApp application class.
-
-GomokuServer.cpp
-    This is the main application source file that contains the application
-    class CGomokuServerApp.
-
-GomokuServer.rc
-    This is a listing of all of the Microsoft Windows resources that the
-    program uses.  It includes the icons, bitmaps, and cursors that are stored
-    in the RES subdirectory.  This file can be directly edited in Microsoft
-    Visual C++. Your project resources are in 1033.
-
-res\GomokuServer.ico
-    This is an icon file, which is used as the application's icon.  This
-    icon is included by the main resource file GomokuServer.rc.
-
-res\GomokuServer.rc2
-    This file contains resources that are not edited by Microsoft
-    Visual C++. You should place all resources not editable by
-    the resource editor in this file.
-
-
-/////////////////////////////////////////////////////////////////////////////
-
-The application wizard creates one dialog class:
-
-GomokuServerDlg.h, GomokuServerDlg.cpp - the dialog
-    These files contain your CGomokuServerDlg class.  This class defines
-    the behavior of your application's main dialog.  The dialog's template is
-    in GomokuServer.rc, which can be edited in Microsoft Visual C++.
-
-/////////////////////////////////////////////////////////////////////////////
-
-Other standard files:
-
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named GomokuServer.pch and a precompiled types file named StdAfx.obj.
-
-Resource.h
-    This is the standard header file, which defines new resource IDs.
-    Microsoft Visual C++ reads and updates this file.
-
-/////////////////////////////////////////////////////////////////////////////
-
-Other notes:
-
-The application wizard uses "TODO:" to indicate parts of the source code you
-should add to or customize.
-
-If your application uses MFC in a shared DLL, you will need
-to redistribute the MFC DLLs. If your application is in a language
-other than the operating system's locale, you will also have to
-redistribute the corresponding localized resources mfc110XXX.DLL.
-For more information on both of these topics, please see the section on
-redistributing Visual C++ applications in MSDN documentation.
-
-/////////////////////////////////////////////////////////////////////////////
+## Ch?y game:
+1. Ch?y server tr??c: Build File Exe c?a GomokuServer.
+2. Trên các máy Client ch?y file Exe build ra t? Project GomokuClient: l?u ý thông tin ??a ch? IP ???c fix c?ng trong code, n?u mu?n ch?y Client trên Máy nào ph?i fix l?i ??a ch? IP t??ng ?ng v?i máy ?y.
+3. Tên ??ng nh?p và m?t kh?u ???c l?u trong file passwords.txt ???c ?i cùng v?i Server.
